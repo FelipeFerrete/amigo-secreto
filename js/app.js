@@ -6,4 +6,5 @@ function adicionar(){
     } else {
         lista.textContent = lista.textContent + ', ' + amigo.value;
     }
+    amigo.value = ""; // Limpa o campo de texto após adicionar
 }
