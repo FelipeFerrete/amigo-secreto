@@ -6,6 +6,10 @@ function adicionar(){
     alert("Campo vazio! Adicione um amigo.");
     return;
  }
+ if (amigos.includes(amigo.value)) {
+    alert("Amigo já adicionado!");
+    return;
+ }
     let lista = document.getElementById("lista-amigos");
     amigos.push(amigo.value);
     if(lista.textContent.trim() === "") {
