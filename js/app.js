@@ -13,9 +13,14 @@ function adicionar(){
 }
 
 function sortear() {
+    embaralhar(amigos);
+    let sorteio = document.getElementById("lista-sorteio");
 
+    for(let i = 0; i < amigos.lenght;++i) {
+        sorteio.innerHTML = sorteio.innerHTML + amigos[i] + " --> " + amigos[i+1] + "<br>";
+        
+    }
 }
-
 function embaralhar() {
     for (let indice = lista.length; indice;indice--) {
 
@@ -24,4 +29,4 @@ function embaralhar() {
         [lista[indice - 1], lista[indiceAleatorio]] =
          [lista[indiceAleatorio], lista[indice - 1]];
  }
-}
+} 
